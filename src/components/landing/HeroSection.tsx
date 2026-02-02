@@ -1,0 +1,123 @@
+import { useEffect, useState } from 'react';
+import { ChevronDown } from 'lucide-react';
+
+const HeroSection = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
+  const scrollToNext = () => {
+    const aboutSection = document.getElementById('about');
+    aboutSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  return (
+    <section className="relative h-screen w-full overflow-hidden">
+      {/* Video Background */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="h-full w-full object-cover"
+          poster="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80"
+        >
+          <source 
+            src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-city-traffic-at-night-11-large.mp4" 
+            type="video/mp4" 
+          />
+        </video>
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-gradient-hero" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
+        <div className="max-w-5xl">
+          {/* Subtle pre-headline */}
+          <p 
+            className={`mb-8 font-body text-xs tracking-ultra uppercase text-gold transition-all duration-1000 ${
+              isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}
+            style={{ transitionDelay: '0.2s' }}
+          >
+            Invitation Only
+          </p>
+
+          {/* Main Headline */}
+          <h1 
+            className={`font-display text-4xl md:text-6xl lg:text-7xl font-medium leading-tight text-cream mb-8 transition-all duration-1000 ${
+              isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
+            style={{ transitionDelay: '0.4s' }}
+          >
+            Information You Can't Search.
+            <br />
+            <span className="text-gradient-gold">A Journey You Can't Replicate.</span>
+          </h1>
+
+          {/* Sub-headline */}
+          <p 
+            className={`font-display text-xl md:text-2xl text-cream-muted mb-6 transition-all duration-1000 ${
+              isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
+            style={{ transitionDelay: '0.6s' }}
+          >
+            NexEvate marks the end of networking and the beginning of your expansion.
+          </p>
+
+          {/* Supporting copy */}
+          <p 
+            className={`font-body text-base md:text-lg text-muted-foreground max-w-3xl mx-auto mb-4 transition-all duration-1000 ${
+              isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
+            style={{ transitionDelay: '0.8s' }}
+          >
+            We bring 50–100 vetted leaders into a room with the architects of industry
+            to dismantle the glass wall and rebuild the future.
+          </p>
+
+          {/* Hook / Emphasis */}
+          <p 
+            className={`font-body text-sm tracking-wide-custom uppercase text-gold/80 mb-12 transition-all duration-1000 ${
+              isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
+            style={{ transitionDelay: '1s' }}
+          >
+            No business cards. No fluff. This is the room where it happens.
+          </p>
+
+          {/* CTA */}
+          <div 
+            className={`transition-all duration-1000 ${
+              isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
+            style={{ transitionDelay: '1.2s' }}
+          >
+            <button className="btn-hero">
+              Apply for the Experience
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <button 
+        onClick={scrollToNext}
+        className={`absolute bottom-12 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 transition-all duration-1000 group ${
+          isLoaded ? 'opacity-100' : 'opacity-0'
+        }`}
+        style={{ transitionDelay: '1.5s' }}
+        aria-label="Scroll to next section"
+      >
+        <span className="text-xs tracking-ultra uppercase text-cream-muted">Discover</span>
+        <ChevronDown className="w-5 h-5 text-gold animate-float" />
+      </button>
+    </section>
+  );
+};
+
+export default HeroSection;
