@@ -38,14 +38,14 @@ const HeroSection = () => {
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
         <div className="max-w-5xl">
           {/* Subtle pre-headline */}
-          <p 
+          {/* <p 
             className={`mb-8 font-body text-xs tracking-ultra uppercase text-gold transition-all duration-1000 ${
               isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
             style={{ transitionDelay: '0.2s' }}
           >
             Invitation Only
-          </p>
+          </p> */}
 
           {/* Main Headline */}
           <h1 

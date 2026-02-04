@@ -72,11 +72,17 @@ const SparkSection = () => {
               <div className="divider-line mb-6" />
               
               <ul className="space-y-4">
-                <li className="flex items-start gap-4">
+                <li className="flex items-start gap-3">
                   <span className="w-1 h-1 mt-2 bg-gold flex-shrink-0" />
                   <p className="text-cream-muted">Panelists, VCs, and industry titans in the room</p>
                 </li>
-                <li className="flex items-start gap-4">
+
+                {/* <li className="flex items-start gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0" />
+                  <span className="body-editorial">Un-Googleable insights from industry architects</span>
+                </li> */}
+
+                <li className="flex items-start gap-3">
                   <span className="w-1 h-1 mt-2 bg-gold flex-shrink-0" />
                   <p className="text-cream-muted">Curated attendees across Tech, Retail, Real Estate & Finance</p>
                 </li>

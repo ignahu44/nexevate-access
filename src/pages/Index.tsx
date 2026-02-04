@@ -7,6 +7,7 @@ import PartnersSection from '@/components/landing/PartnersSection';
 import SupportSection from '@/components/landing/SupportSection';
 import SignUpSection from '@/components/landing/SignUpSection';
 import Footer from '@/components/landing/Footer';
+import RuleSection from '@/components/landing/RuleSection';
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <HeroSection />
       <AboutSection />
       <NoBusinessCardsSection />
+      <RuleSection />
       <SparkSection />
       <OrganizersSection />
       <PartnersSection />
