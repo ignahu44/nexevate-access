@@ -99,6 +99,18 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
   }
+
+  .headline-display {
+    @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-semibold leading-[1.1] tracking-tight;
+  }
+
+  .body-large {
+    @apply text-lg md:text-xl font-sans font-light leading-relaxed text-muted-foreground;
+  }
+
+  .body-editorial {
+    @apply text-base md:text-lg font-sans font-light leading-[1.8] text-muted-foreground;
+  }
 }
 
 @layer components {
@@ -213,4 +225,21 @@
   .tracking-wide-custom {
     letter-spacing: 0.15em;
   }
+
+  .animate-fade-up {
+    animation: fadeUp 1.5s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-scroll-indicator {
+    animation: scrollBounce 2s ease-in-out infinite;
+  }
+  
 }

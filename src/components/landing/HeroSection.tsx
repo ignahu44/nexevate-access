@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import heroVideo from "@/assets/hero-video.mp4";
+
 
 const HeroSection = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -16,20 +18,18 @@ const HeroSection = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       {/* Video Background */}
-      <div className="absolute inset-0 z-0">
+
+        <div className="absolute inset-0 z-0">
         <video
           autoPlay
-          muted
           loop
+          muted
           playsInline
           className="h-full w-full object-cover"
-          poster="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80"
         >
-          <source 
-            src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-city-traffic-at-night-11-large.mp4" 
-            type="video/mp4" 
-          />
+          <source src={heroVideo} type="video/mp4" />
         </video>
+        
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-gradient-hero" />
       </div>
@@ -121,3 +121,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
