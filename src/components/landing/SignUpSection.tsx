@@ -70,6 +70,9 @@ const SignUpSection = () => {
           <button className="btn-registration">
             Sign Up — Be the First to Know When the Next Door Opens
           </button>
+          {/* <button className="btn-registration hover:shadow-[0_0_40px_rgba(196,160,80,0.4)]">
+            Sign Up — Be the First to Know When the Next Door Opens
+          </button> */}
           <p className="text-xs text-muted-foreground mt-4">
             All applications are reviewed. Admission is by invitation only.
           </p>
@@ -103,4 +106,7 @@ const SignUpSection = () => {
 };
 
 export default SignUpSection;
+
+
+
 
