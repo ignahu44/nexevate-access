@@ -44,7 +44,7 @@
     /* Custom tokens */
     --cream: 40 30% 94%;
     --cream-muted: 40 15% 75%;
-    --gold: 42 45% 58%;
+    --gold: 38 60% 50%;
     --gold-light: 42 50% 70%;
     --gold-dark: 42 40% 45%;
     --charcoal: 0 0% 10%;
@@ -126,6 +126,15 @@
     background: hsl(var(--gold-light));
     transform: translateY(-2px);
     box-shadow: 0 10px 40px hsla(42, 45%, 58%, 0.3);
+  }
+  
+  /* Register Button */
+
+  .btn-registration {
+    @apply inline-flex items-center justify-center px-8 py-4 text-sm font-medium mb-4 uppercase transition-all duration-500;
+    background: hsl(var(--gold));
+    color: hsl(var(--obsidian));
+    letter-spacing: 0.1em;
   }
   
   /* Ghost button */

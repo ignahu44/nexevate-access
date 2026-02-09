@@ -8,6 +8,7 @@ import SupportSection from '@/components/landing/SupportSection';
 import SignUpSection from '@/components/landing/SignUpSection';
 import Footer from '@/components/landing/Footer';
 import RuleSection from '@/components/landing/RuleSection';
+import RegistrationSection from '@/components/landing/RegistrationSection';
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <PartnersSection />
       <SupportSection />
       <SignUpSection />
+      {/* <RegistrationSection/> */}
       <Footer />
     </main>
   );

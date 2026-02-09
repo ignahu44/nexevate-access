@@ -1,16 +1,19 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
+// import { useState } from 'react';
 
 const SignUpSection = () => {
-  const { ref, isVisible } = useScrollReveal(0.2);
-  const [email, setEmail] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log('Email submitted:', email);
-    setEmail('');
-  };
+  const [isLoaded, setIsLoaded] = useState(false);
+  const { ref, isVisible } = useScrollReveal(0.2);
+  // const [email, setEmail] = useState('');
+
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   // Handle form submission
+  //   console.log('Email submitted:', email);
+  //   setEmail('');
+  // };
 
   return (
     <section className="relative py-32 md:py-48 bg-background overflow-hidden">
@@ -22,20 +25,19 @@ const SignUpSection = () => {
 
       <div className="section-container relative z-10">
         <div ref={ref} className="max-w-4xl mx-auto text-center">
+
           {/* Section Label */}
-          <p className={`text-xs tracking-ultra uppercase text-gold mb-8 reveal ${isVisible ? 'visible' : ''}`}>
-            The Selection
-          </p>
+          <p className={`text-xs tracking-ultra uppercase text-gold mb-10 reveal ${isVisible ? 'visible' : ''}`}> Selection </p>
 
           {/* Headline */}
-          <h2 className={`font-display text-4xl md:text-5xl lg:text-6xl font-medium text-cream mb-8 leading-tight reveal reveal-delay-1 ${isVisible ? 'visible' : ''}`}>
+          <h2 className={`font-display text-4xl md:text-5xl lg:text-5xl font-medium text-cream mb-8 leading-tight reveal reveal-delay-1 ${isVisible ? 'visible' : ''}`}>
             It's Not Networking.
             <br />
             <span className="text-gradient-gold">It's the Room Where It Happens.</span>
           </h2>
 
           {/* Divider */}
-          <div className={`divider-line mx-auto mb-10 reveal reveal-delay-2 ${isVisible ? 'visible' : ''}`} />
+          {/* <div className={`divider-line mx-auto mb-10 reveal reveal-delay-2 ${isVisible ? 'visible' : ''}`} /> */}
 
           {/* Key points */}
           <div className={`flex flex-wrap justify-center gap-8 md:gap-16 mb-12 reveal reveal-delay-2 ${isVisible ? 'visible' : ''}`}>
@@ -53,8 +55,26 @@ const SignUpSection = () => {
             </div>
           </div>
 
-          {/* Email form */}
-          <form 
+          <p className="body-large mb-12 text-foreground/80">
+            We don't sell tickets. We extend invitations to those ready to step beyond 
+            the glass wall. If you believe you belong in this room, we'd like to know you.
+          </p>
+
+
+          <div 
+            className={`transition-all duration-1000 ${
+              isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
+            style={{ transitionDelay: '1.2s' }}
+          ></div>
+          <button className="btn-registration">
+            Sign Up — Be the First to Know When the Next Door Opens
+          </button>
+          <p className="text-xs text-muted-foreground mt-4">
+            All applications are reviewed. Admission is by invitation only.
+          </p>
+
+          {/* <form 
             onSubmit={handleSubmit}
             className={`max-w-xl mx-auto reveal reveal-delay-3 ${isVisible ? 'visible' : ''}`}
           >
@@ -74,7 +94,8 @@ const SignUpSection = () => {
             <p className="text-xs text-muted-foreground mt-4">
               Be the first to know when the next door opens.
             </p>
-          </form>
+          </form> */}
+
         </div>
       </div>
     </section>
@@ -82,3 +103,4 @@ const SignUpSection = () => {
 };
 
 export default SignUpSection;
+
