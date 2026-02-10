@@ -14,15 +14,13 @@ const Index = () => {
   return (
     <main className="bg-background">
       <HeroSection />
+      <PartnersSection />
       <AboutSection />
       <NoBusinessCardsSection />
-      {/* <RuleSection /> */}
       <SparkSection />
       <OrganizersSection />
-      <PartnersSection />
       <SupportSection />
       <SignUpSection />
-      {/* <RegistrationSection/> */}
       <Footer />
     </main>
   );

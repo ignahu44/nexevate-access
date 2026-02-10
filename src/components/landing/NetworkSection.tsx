@@ -21,7 +21,7 @@ const PartnersSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   return (
-    <section id="network" className="py-18 bg-background overflow-hidden" ref={ref}>
+    <section id="network" className="py-24 bg-background overflow-hidden" ref={ref}>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -65,7 +65,7 @@ const PartnersSection = () => {
       </div>
 
       {/* Bottom Border */}
-      {/* <div className="mt-16 mx-8 md:mx-16 border-b border-border" /> */}
+      <div className="mt-16 mx-8 md:mx-16 border-b border-border" />
     </section>
   );
 };
@@ -74,65 +74,52 @@ export default PartnersSection;
 
 
 
-
-
-
-
-
-
-// import { useScrollReveal } from '@/hooks/useScrollReveal';
-
 // const partners = [
-//   { name: "Apex Capital", initials: "AC" },
+//   { name: "Apex Ventures", initials: "AV" },
+//   { name: "Horizon Capital", initials: "HC" },
+//   { name: "Sterling Partners", initials: "SP" },
+//   { name: "Nova Fund", initials: "NF" },
 //   { name: "Meridian Group", initials: "MG" },
-//   { name: "Vertex Industries", initials: "VI" },
-//   { name: "Sterling & Co", initials: "S&C" },
-//   { name: "Nova Partners", initials: "NP" },
-//   { name: "Pinnacle Holdings", initials: "PH" },
+//   { name: "Catalyst Labs", initials: "CL" },
 // ];
 
 // const PartnersSection = () => {
-//   const { ref, isVisible } = useScrollReveal(0.2);
-
 //   return (
-//     <section className="relative py-32 md:py-40 bg-background">
-//       <div className="section-container">
-//         <div ref={ref} className="text-center">
-//           {/* Section Label */}
-//           <p className={`text-xs tracking-ultra uppercase text-gold mb-6 reveal ${isVisible ? 'visible' : ''}`}>
-//             The Collective
+//     <section className="section-padding bg-background">
+//       <div className="container-narrow">
+//         {/* Section Header */}
+//         <div className="mb-16 md:mb-20 text-center">
+//           <p className="mb-4 font-sans text-xs font-medium uppercase tracking-[0.3em] text-primary">
+//             Partners & Sponsors
 //           </p>
-
-//           {/* Headline */}
-//           <h2 className={`font-display text-4xl md:text-5xl lg:text-6xl font-medium text-cream mb-6 reveal reveal-delay-1 ${isVisible ? 'visible' : ''}`}>
+//           <h2 className="headline-section text-foreground mb-6">
 //             The Ecosystem
 //           </h2>
-
-//           {/* Supporting copy */}
-//           <p className={`font-display text-xl md:text-2xl text-cream-muted max-w-3xl mx-auto mb-16 reveal reveal-delay-2 ${isVisible ? 'visible' : ''}`}>
-//             Growth is internal. Growth is external.
-//             <br />
-//             <span className="text-cream">Alone you arrive — together you build a journey.</span>
+//           <p className="body-editorial max-w-2xl mx-auto">
+//             Our partners share our vision: that meaningful growth happens through 
+//             intentional connection. Together, we're building long-term journeys, 
+//             not transactional moments.
 //           </p>
+//         </div>
 
-//           {/* Partner logos grid */}
-//           <div className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 reveal reveal-delay-3 ${isVisible ? 'visible' : ''}`}>
-//             {partners.map((partner, index) => (
-//               <div 
-//                 key={index}
-//                 className="flex items-center justify-center p-8 border border-border bg-card hover:border-gold/30 transition-all duration-500 group"
-//               >
-//                 <div className="text-center">
-//                   <span className="font-display text-2xl text-muted-foreground group-hover:text-gold transition-colors duration-500">
-//                     {partner.initials}
-//                   </span>
-//                   <p className="text-xs text-muted-foreground mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-//                     {partner.name}
-//                   </p>
-//                 </div>
+//         {/* Logo Grid */}
+//         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-12">
+//           {partners.map((partner, index) => (
+//             <div
+//               key={index}
+//               className="flex flex-col items-center justify-center p-6 border border-border/30 bg-card/50 hover:border-primary/30 transition-colors duration-300"
+//             >
+//               {/* Placeholder logo using initials */}
+//               <div className="mb-4 h-16 w-16 flex items-center justify-center border border-muted-foreground/20 rounded-sm">
+//                 <span className="font-serif text-xl font-medium text-muted-foreground">
+//                   {partner.initials}
+//                 </span>
 //               </div>
-//             ))}
-//           </div>
+//               <p className="font-sans text-xs font-medium text-muted-foreground text-center">
+//                 {partner.name}
+//               </p>
+//             </div>
+//           ))}
 //         </div>
 //       </div>
 //     </section>
@@ -140,3 +127,4 @@ export default PartnersSection;
 // };
 
 // export default PartnersSection;
+
