@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { ChevronDown } from 'lucide-react';
 import heroVideo from "@/assets/hero-video.mp4";
 
 

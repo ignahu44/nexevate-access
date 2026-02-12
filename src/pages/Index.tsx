@@ -7,8 +7,9 @@ import PartnersSection from '@/components/landing/PartnersSection';
 import SupportSection from '@/components/landing/SupportSection';
 import SignUpSection from '@/components/landing/SignUpSection';
 import Footer from '@/components/landing/Footer';
-import RuleSection from '@/components/landing/RuleSection';
-import RegistrationSection from '@/components/landing/RegistrationSection';
+// import RuleSection from '@/components/landing/RuleSection';
+// import RegistrationSection from '@/components/landing/RegistrationSection';
+import PortfolioSection from '@/components/landing/PortfolioSection';
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <NoBusinessCardsSection />
       <SparkSection />
       <OrganizersSection />
+      <PortfolioSection/>
       <SupportSection />
       <SignUpSection />
       <Footer />
