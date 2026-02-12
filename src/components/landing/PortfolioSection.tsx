@@ -8,7 +8,7 @@ import tslogo from "@/assets/TSLA_BIG.png";
 import wmlogo from "@/assets/WMT_BIG.png";
 
 const categories = [
-  // "All",
+  "All",
   "AI Apps",
   "AI Infra",
   "Commerce",
@@ -55,7 +55,7 @@ const PortfolioSection = () => {
             Portfolio
           </p>
           <h2 className="headline-section text-foreground">
-            Companies We Champion
+            Companies That Trust Us
           </h2>
           <div className="divider-line-portfolio mt-6" />
         </div>
