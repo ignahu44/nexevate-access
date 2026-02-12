@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const categories = [
-  "All",
+  // "All",
   "AI Apps",
   "AI Infra",
   "Commerce",

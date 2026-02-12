@@ -147,6 +147,11 @@
     border: 1px solid hsl(var(--border));
     letter-spacing: 0.2em;
   }
+
+
+  .btn-location {
+    @apply bg-transparent text-foreground font-sans font-medium tracking-wide uppercase text-xs md:text-sm border border-foreground/30 hover:border-foreground/60 hover:bg-foreground/5;
+  }
   
   .btn-ghost:hover {
     border-color: hsl(var(--gold));
@@ -238,6 +243,12 @@
   .divider-line-portfolio {
     @apply w-16 h-px bg-gradient-to-r from-transparent via-[hsl(var(--gold))] to-transparent;
   }
+
+  .headline-section-location {
+    @apply text-3xl md:text-4xl lg:text-5xl font-serif font-semibold leading-[1.15] tracking-tight;
+  }
+
+  
 
 }
 

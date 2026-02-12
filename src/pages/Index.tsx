@@ -10,6 +10,7 @@ import Footer from '@/components/landing/Footer';
 // import RuleSection from '@/components/landing/RuleSection';
 // import RegistrationSection from '@/components/landing/RegistrationSection';
 import PortfolioSection from '@/components/landing/PortfolioSection';
+import LocationSection from '@/components/landing/LocationSection';
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <SparkSection />
       <OrganizersSection />
       <PortfolioSection/>
+      <LocationSection/>
       <SupportSection />
       <SignUpSection />
       <Footer />
