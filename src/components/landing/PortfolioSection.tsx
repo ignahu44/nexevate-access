@@ -1,5 +1,11 @@
 import { useState } from "react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import amlogo from "@/assets/AMZN_BIG.png";
+import cologo from "@/assets/COST_BIG.png";
+import cslogo from "@/assets/CSCO.png";
+import orlogo from "@/assets/ORCL_BIG.png";
+import tslogo from "@/assets/TSLA_BIG.png";
+import wmlogo from "@/assets/WMT_BIG.png";
 
 const categories = [
   // "All",
@@ -13,18 +19,18 @@ const categories = [
 ];
 
 const portfolioItems = [
-  { name: "Meridian AI", category: "AI Apps", initials: "MA" },
-  { name: "Vertex Labs", category: "AI Infra", initials: "VL" },
-  { name: "Cartesian", category: "Commerce", initials: "Ca" },
-  { name: "Aurum Pay", category: "Fintech", initials: "AP" },
-  { name: "Helix Health", category: "Healthcare", initials: "HH" },
-  { name: "Forge Industrial", category: "Industrials", initials: "FI" },
-  { name: "Sentinel", category: "Security", initials: "Se" },
-  { name: "Nova Systems", category: "AI Apps", initials: "NS" },
-  { name: "Arcline", category: "AI Infra", initials: "Ar" },
-  { name: "Ledger Protocol", category: "Fintech", initials: "LP" },
-  { name: "Oasis Bio", category: "Healthcare", initials: "OB" },
-  { name: "Bastion", category: "Security", initials: "Ba" },
+  { name: "Meridian AI", category: "AI Apps", initials: "MA", logoImage: amlogo},
+  { name: "Vertex Labs", category: "AI Infra", initials: "VL", logoImage: cologo },
+  { name: "Cartesian", category: "Commerce", initials: "Ca", logoImage: cslogo },
+  { name: "Aurum Pay", category: "Fintech", initials: "AP", logoImage: orlogo },
+  { name: "Helix Health", category: "Healthcare", initials: "HH", logoImage: tslogo },
+  { name: "Forge Industrial", category: "Industrials", initials: "FI", logoImage: wmlogo },
+  { name: "Sentinel", category: "Security", initials: "Se", logoImage: amlogo},
+  { name: "Nova Systems", category: "AI Apps", initials: "NS", logoImage: cologo  },
+  { name: "Arcline", category: "AI Infra", initials: "Ar", logoImage: cslogo },
+  { name: "Ledger Protocol", category: "Fintech", initials: "LP", logoImage: orlogo },
+  { name: "Oasis Bio", category: "Healthcare", initials: "OB", logoImage: tslogo },
+  { name: "Bastion", category: "Security", initials: "Ba", logoImage: wmlogo},
 ];
 
 const PortfolioSection = () => {
@@ -89,14 +95,15 @@ const PortfolioSection = () => {
             {filtered.map((item) => (
               <div
                 key={item.name}
-                className="group relative aspect-square flex flex-col items-center justify-center rounded-sm border border-border/40 bg-card transition-all duration-500 hover:border-primary/20 hover:shadow-[0_0_30px_-10px_hsl(var(--primary)/0.15)]"
+                className="group relative aspect-[5/3] flex flex-col items-center justify-center p-8 rounded-sm border border-black/5 bg-card  transition-all duration-500 hover:border-primary/20 hover:shadow-[0_0_30px_-10px_hsl(var(--primary)/0.15)]"
               >
-                <span className="font-serif text-3xl font-semibold text-foreground/70 transition-colors duration-300 group-hover:text-foreground">
-                  {item.initials}
-                </span>
-                <span className="mt-3 font-sans text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground transition-colors duration-300 group-hover:text-foreground/70">
-                  {item.name}
-                </span>
+                <img
+                src={item.logoImage}
+                alt={item.name}
+                className="max-h-16 object-contain opacity-80 transition-all duration-300 group-hover:opacity-100"
+              />
+        
+
               </div>
             ))}
           </div>
