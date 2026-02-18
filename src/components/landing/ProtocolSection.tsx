@@ -1,6 +1,6 @@
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
-const NoBusinessCardsSection = () => {
+const ProtocolSection = () => {
   const { ref, isVisible } = useScrollReveal(0.2);
 
   return (
@@ -57,4 +57,4 @@ const NoBusinessCardsSection = () => {
   );
 };
 
-export default NoBusinessCardsSection;
+export default ProtocolSection;

@@ -1,14 +1,12 @@
 import HeroSection from '@/components/landing/HeroSection';
 import AboutSection from '@/components/landing/AboutSection';
-import NoBusinessCardsSection from '@/components/landing/NoBusinessCardsSection';
+import ProtocolSection from '@/components/landing/ProtocolSection';
 import SparkSection from '@/components/landing/SparkSection';
 import OrganizersSection from '@/components/landing/OrganizersSection';
 import PartnersSection from '@/components/landing/PartnersSection';
 import SupportSection from '@/components/landing/SupportSection';
 import SignUpSection from '@/components/landing/SignUpSection';
 import Footer from '@/components/landing/Footer';
-// import RuleSection from '@/components/landing/RuleSection';
-// import RegistrationSection from '@/components/landing/RegistrationSection';
 import PortfolioSection from '@/components/landing/PortfolioSection';
 import LocationSection from '@/components/landing/LocationSection';
 
@@ -18,7 +16,7 @@ const Index = () => {
       <HeroSection />
       <PartnersSection />
       <AboutSection />
-      <NoBusinessCardsSection />
+      <ProtocolSection />
       <SparkSection />
       <OrganizersSection />
       <PortfolioSection/>
@@ -31,3 +29,4 @@ const Index = () => {
 };
 
 export default Index;
+ 
