@@ -45,9 +45,8 @@ const SupportSection = () => {
             </h3>
             
             <p className="text-cream-muted mb-8 leading-relaxed">
-              NexEvate Ground Crew
-Behind every seamless experience is a team that cares about the details. Our Ground Crew are not volunteers in the traditional sense—they are future leaders gaining access through contribution.
-If you're building something and believe in the power of proximity to exceptional people, this is your entry point. Help us create the environment where transformation happens, and you'll find yourself transformed in the process.
+              NexEvate Ground Crew Behind every seamless experience is a team that cares about the details. Our Ground Crew are not volunteers in the traditional sense—they are future leaders gaining access through contribution.
+              If you're building something and believe in the power of proximity to exceptional people, this is your entry point. Help us create the environment where transformation happens, and you'll find yourself transformed in the process.
             </p>
 
             <button className="btn-ghost mt-auto">
