@@ -15,24 +15,23 @@ const SparkSection = () => {
             The Spark
           </h2>
           <p className={`font-display text-xl md:text-2xl text-cream-muted mt-4 reveal reveal-delay-2 ${isVisible ? 'visible' : ''}`}>
-            Two Hours of High-Velocity Growth
+            Three Hours of High-Velocity Growth
           </p>
         </div>
 
         {/* Two Column Content */}
         <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
+
           {/* First Block - 60 Minutes of Raw Truth */}
           <div className={`relative p-8 lg:p-12 bg-card border border-border reveal reveal-delay-2 ${isVisible ? 'visible' : ''}`}>
             {/* Number badge */}
-            <div className="absolute -top-6 left-8">
+            <div className="absolute -top-6 left-8 flex items-end gap-1">
               <span className="font-display text-7xl md:text-8xl font-medium text-gold/20">60</span>
+              <p className="text-xs tracking-ultra uppercase text-gold">MIN</p>
             </div>
             
             <div className="pt-8">
-              <p className="text-xs tracking-ultra uppercase text-gold mb-4">First Hour</p>
-              <h3 className="font-display text-2xl md:text-3xl text-cream mb-6">
-                Raw Truth
-              </h3>
+              <h3 className="font-display text-2xl md:text-3xl text-cream mb-6"> Raw Truth </h3>
               
               <div className="divider-line mb-6" />
               
@@ -56,15 +55,17 @@ const SparkSection = () => {
             <div className="absolute bottom-0 right-0 w-16 h-16 border-b border-r border-gold/30" />
           </div>
 
+
           {/* Second Block - 60 Minutes of 3D Stacking */}
           <div className={`relative p-8 lg:p-12 bg-card border border-border reveal reveal-delay-3 ${isVisible ? 'visible' : ''}`}>
+
             {/* Number badge */}
-            <div className="absolute -top-6 left-8">
-              <span className="font-display text-7xl md:text-8xl font-medium text-gold/20">60</span>
+            <div className="absolute -top-6 left-8 flex items-end gap-2">
+              <span className="font-display text-7xl md:text-8xl font-medium text-gold/20">120</span>
+              <p className="text-xs tracking-ultra uppercase text-gold">min</p>
             </div>
             
             <div className="pt-8">
-              <p className="text-xs tracking-ultra uppercase text-gold mb-4">Second Hour</p>
               <h3 className="font-display text-2xl md:text-3xl text-cream mb-6">
                 3D Stacking
               </h3>
@@ -101,7 +102,7 @@ const SparkSection = () => {
         {/* Bottom emphasis */}
         <div className={`mt-16 text-center reveal reveal-delay-4 ${isVisible ? 'visible' : ''}`}>
           <p className="font-display text-lg md:text-xl text-cream-muted italic">
-            "Two hours that compound into decades of advantage."
+            "Three hours that compound into decades of advantage."
           </p>
         </div>
       </div>
