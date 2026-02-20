@@ -7,22 +7,6 @@ import orlogo from "@/assets/ORCL_BIG.png";
 import tslogo from "@/assets/TSLA_BIG.png";
 import wmlogo from "@/assets/WMT_BIG.png";
 
-// const partners = [
-//   "Sequoia Capital",
-//   "Andreessen Horowitz",
-//   "Accel Partners",
-//   "Benchmark",
-//   "Index Ventures",
-//   "Lightspeed",
-//   "General Catalyst",
-//   "Founders Fund",
-//   "Greylock",
-//   "NEA",
-//   "Bessemer",
-//   "Tiger Global",
-// ];
-
-
 const partners = [
   { name: "Meridian AI", logoImage: amlogo},
   { name: "Vertex Labs",logoImage: cologo },

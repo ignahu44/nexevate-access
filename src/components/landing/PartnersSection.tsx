@@ -1,11 +1,5 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import amlogo from "@/assets/AMZN_BIG.png";
-import cologo from "@/assets/COST_BIG.png";
-import cslogo from "@/assets/CSCO.png";
-import orlogo from "@/assets/ORCL_BIG.png";
-import tslogo from "@/assets/TSLA_BIG.png";
-import wmlogo from "@/assets/WMT_BIG.png";
 
 const partners = [
   "Sequoia Capital",
@@ -22,19 +16,18 @@ const partners = [
   "Tiger Global",
 ];
 
-
 const PartnersSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
-  
+
   return (
-    <section id="network" className="py-18 bg-background overflow-hidden" ref={ref}>
+    <section id="network" className="py-24 bg-background overflow-hidden" ref={ref}>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
         className="text-center mb-16 px-8"
-        >
+      >
         <p className="text-primary text-sm font-medium tracking-widest uppercase mb-4">
           Our Network
         </p>
@@ -49,9 +42,9 @@ const PartnersSection = () => {
           {/* First set of partners */}
           {partners.map((partner, index) => (
             <div
-            key={`first-${index}`}
+              key={`first-${index}`}
               className="flex items-center justify-center px-8 py-4"
-              >
+            >
               <span className="font-display text-xl md:text-2xl font-semibold text-muted-foreground/50 hover:text-foreground transition-colors duration-300 whitespace-nowrap">
                 {partner}
               </span>
@@ -60,8 +53,8 @@ const PartnersSection = () => {
           {/* Duplicate for infinite loop */}
           {partners.map((partner, index) => (
             <div
-            key={`second-${index}`}
-            className="flex items-center justify-center px-8 py-4"
+              key={`second-${index}`}
+              className="flex items-center justify-center px-8 py-4"
             >
               <span className="font-display text-xl md:text-2xl font-semibold text-muted-foreground/50 hover:text-foreground transition-colors duration-300 whitespace-nowrap">
                 {partner}
@@ -72,10 +65,9 @@ const PartnersSection = () => {
       </div>
 
       {/* Bottom Border */}
-      {/* <div className="mt-16 mx-8 md:mx-16 border-b border-border" /> */}
+      <div className="mt-16 mx-8 md:mx-16 border-b border-border" />
     </section>
   );
 };
 
 export default PartnersSection;
-

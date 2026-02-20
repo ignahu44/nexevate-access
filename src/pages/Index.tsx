@@ -3,12 +3,12 @@ import AboutSection from '@/components/landing/AboutSection';
 import ProtocolSection from '@/components/landing/ProtocolSection';
 import SparkSection from '@/components/landing/SparkSection';
 import OrganizersSection from '@/components/landing/OrganizersSection';
-import PartnersSection from '@/components/landing/PartnersCardsSection';
 import SupportSection from '@/components/landing/SupportSection';
 import SignUpSection from '@/components/landing/SignUpSection';
 import Footer from '@/components/landing/Footer';
 import PortfolioSection from '@/components/landing/PortfolioSection';
 import LocationSection from '@/components/landing/LocationSection';
+import PartnersSection from '@/components/landing/PartnersSection';
 import PartnersCardsSection from '@/components/landing/PartnersCardsSection';
 
 const Index = () => {
