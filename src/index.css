@@ -5,7 +5,10 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
+
+  /* VARIANTE PALETA ORIGINAL */
+
+:root {
 
     /* Core palette - Dark blue luxury */
     --background: 226 35% 11%;           /* #161825 */
@@ -99,6 +102,8 @@
     --foreground: 220 15% 90%;
   }
 }
+
+
 @layer base {
   * {
     @apply border-border;
