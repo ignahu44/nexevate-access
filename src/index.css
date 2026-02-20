@@ -57,13 +57,15 @@
 
     --gold: 45 85% 50%;                  /* #ECBD00 */
     --gold-soft: 40 50% 65%;             /* #D6B57B */
+    --gold-light: 42 50% 70%;
+    --gold-dark: 42 40% 45%;
 
     /* Gradients */
     --gradient-hero: linear-gradient(
       180deg,
-      hsla(226, 35%, 11%, 0.9) 0%,
-      hsla(222, 40%, 20%, 0.7) 50%,
-      hsla(226, 35%, 11%, 1) 100%
+      hsla(226, 40%, 11%, 0.9) 0%,
+      hsla(222, 45%, 20%, 0.7) 50%,
+      hsla(226, 40%, 11%, 1) 100%
     );
 
     --gradient-card: linear-gradient(
@@ -137,9 +139,10 @@
 
 @layer components {
   /* Hero button variant */
+  
   .btn-hero {
     @apply inline-flex items-center justify-center px-8 py-4 text-sm font-medium tracking-widest uppercase transition-all duration-500;
-    background: hsl(var(--gold));
+    background: hsl(var(--gold ) / 0.5);
     color: hsl(var(--obsidian));
     letter-spacing: 0.2em;
   }
@@ -152,7 +155,7 @@
 
   .btn-registration {
     @apply inline-flex items-center justify-center px-8 py-4 text-sm font-medium mb-4 uppercase transition-all duration-500;
-    background: hsl(var(--gold));
+    background: hsl(var(--gold) / 0.5);
     color: hsl(var(--obsidian));
     letter-spacing: 0.1em;
   }
@@ -169,16 +172,12 @@
     border: 1px solid hsl(var(--border));
     letter-spacing: 0.2em;
   }
-
-
-  .btn-location {
-    @apply bg-transparent text-foreground font-sans font-medium tracking-wide uppercase text-xs md:text-sm border border-foreground/30 hover:border-foreground/60 hover:bg-foreground/5;
-  }
   
   .btn-ghost:hover {
     border-color: hsl(var(--gold));
     color: hsl(var(--gold));
   }
+
   
   /* Section styling */
   .section-container {
