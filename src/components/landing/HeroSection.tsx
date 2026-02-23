@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import heroVideo from "@/assets/hero-video.mp4";
+
 
 const HeroSection = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -16,20 +17,18 @@ const HeroSection = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       {/* Video Background */}
-      <div className="absolute inset-0 z-0">
+
+        <div className="absolute inset-0 z-0">
         <video
           autoPlay
-          muted
           loop
+          muted
           playsInline
           className="h-full w-full object-cover"
-          poster="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80"
         >
-          <source 
-            src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-city-traffic-at-night-11-large.mp4" 
-            type="video/mp4" 
-          />
+          <source src={heroVideo} type="video/mp4" />
         </video>
+        
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-gradient-hero" />
       </div>
@@ -105,7 +104,7 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <button 
+      {/* <button 
         onClick={scrollToNext}
         className={`absolute bottom-12 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 transition-all duration-1000 group ${
           isLoaded ? 'opacity-100' : 'opacity-0'
@@ -115,9 +114,10 @@ const HeroSection = () => {
       >
         <span className="text-xs tracking-ultra uppercase text-cream-muted">Discover</span>
         <ChevronDown className="w-5 h-5 text-gold animate-float" />
-      </button>
+      </button> */}
     </section>
   );
 };
 
 export default HeroSection;
+

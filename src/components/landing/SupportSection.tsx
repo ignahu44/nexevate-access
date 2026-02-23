@@ -12,7 +12,7 @@ const SupportSection = () => {
       <div className="section-container">
         <div ref={ref} className="grid md:grid-cols-2 gap-12 lg:gap-20">
           {/* Support Block */}
-          <div className={`relative p-10 lg:p-14 bg-background border border-border reveal ${isVisible ? 'visible' : ''}`}>
+          <div className={`relative p-10 lg:p-14 bg-background border border-border reveal flex flex-col ${isVisible ? 'visible' : ''}`}>
             <div className="mb-8">
               <Shield className="w-10 h-10 text-gold stroke-[1.5]" />
             </div>
@@ -26,7 +26,7 @@ const SupportSection = () => {
               the standards that make NexEvate a sanctuary for meaningful exchange.
             </p>
 
-            <button className="btn-ghost">
+            <button className="btn-ghost mt-auto">
               Learn More
             </button>
 
@@ -35,7 +35,7 @@ const SupportSection = () => {
           </div>
 
           {/* Volunteer Block */}
-          <div className={`relative p-10 lg:p-14 bg-background border border-border reveal reveal-delay-2 ${isVisible ? 'visible' : ''}`}>
+          <div className={`relative p-10 lg:p-14 bg-background border border-border reveal flex flex-col reveal-delay-2 ${isVisible ? 'visible' : ''}`}>
             <div className="mb-8">
               <Users className="w-10 h-10 text-gold stroke-[1.5]" />
             </div>
@@ -45,11 +45,11 @@ const SupportSection = () => {
             </h3>
             
             <p className="text-cream-muted mb-8 leading-relaxed">
-              The NexEvate Ground Crew. Be part of the team that orchestrates 
-              moments of transformation for industry leaders.
+              NexEvate Ground Crew Behind every seamless experience is a team that cares about the details. Our Ground Crew are not volunteers in the traditional sense—they are future leaders gaining access through contribution.
+              If you're building something and believe in the power of proximity to exceptional people, this is your entry point. Help us create the environment where transformation happens, and you'll find yourself transformed in the process.
             </p>
 
-            <button className="btn-ghost">
+            <button className="btn-ghost mt-auto">
               Join the Crew
             </button>
 
