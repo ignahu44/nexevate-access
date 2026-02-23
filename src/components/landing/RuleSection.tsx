@@ -16,7 +16,7 @@ const RuleSection = () => {
           {/* Manifesto Content */}
           <div className="space-y-8">
             <p className="body-large text-foreground/90">
-              Business cards are prohibited at NexEvate events.
+              Business cards are prohibited at Nexevate events.
             </p>
 
             <div className="py-8 border-y border-border/50">
@@ -27,14 +27,14 @@ const RuleSection = () => {
 
             <p className="body-editorial max-w-2xl mx-auto">
               If a conversation doesn't earn a follow-up through its substance alone, 
-              it was never a NexEvate connection. We don't facilitate transactions—we 
+              it was never a Nexevate connection. We don't facilitate transactions—we 
               cultivate relationships that matter.
             </p>
 
             <p className="body-editorial max-w-2xl mx-auto">
               When you leave this room, you will carry with you not a stack of rectangles, 
               but the memory of dialogues that shifted your perspective. That is the currency 
-              of NexEvate.
+              of Nexevate.
             </p>
           </div>
 

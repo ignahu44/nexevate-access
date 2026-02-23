@@ -32,7 +32,7 @@ const AboutSection = () => {
                 Most never cross it.
               </p>
               <p>
-                NexEvate is a <strong>sanctuary for Founders, C-Suite executives, 
+                Nexevate is a <strong>sanctuary for Founders, C-Suite executives, 
                 and Investors</strong> — a curated space where the gatekeepers become 
                 collaborators and the impossible becomes inevitable.
               </p>

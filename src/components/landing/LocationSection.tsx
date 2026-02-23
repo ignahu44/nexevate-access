@@ -12,7 +12,7 @@ const LocationSection = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={venueBg}
-          alt="NexEvate venue interior"
+          alt="Nexevate venue interior"
           className="h-full w-full object-cover"
           loading="lazy"
         />

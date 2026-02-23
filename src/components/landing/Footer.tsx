@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo / Brand */}
           <div className="text-center md:text-left">
-            <p className="font-display text-2xl text-cream">NexEvate</p>
+            <p className="font-display text-2xl text-cream">Nexevate</p>
             <p className="text-xs tracking-wide-custom uppercase text-muted-foreground mt-2">
               Where Expansion Begins
             </p>
@@ -36,7 +36,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center md:text-right">
             <p className="text-xs text-muted-foreground">
-              © {new Date().getFullYear()} NexEvate. All rights reserved.
+              © {new Date().getFullYear()} Nexevate. All rights reserved.
             </p>
           </div>
         </div>

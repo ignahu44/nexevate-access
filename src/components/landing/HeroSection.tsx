@@ -65,7 +65,7 @@ const HeroSection = () => {
             }`}
             style={{ transitionDelay: '0.6s' }}
           >
-            NexEvate marks the end of networking and the beginning of your expansion.
+            Nexevate marks the end of networking and the beginning of your expansion.
           </p>
 
           {/* Supporting copy */}
